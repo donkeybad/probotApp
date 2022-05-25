@@ -3,6 +3,6 @@ const {
     createProbot,
     createAzureFunction,
   } = require("@probot/adapter-azure-functions");
-  const app = require("../index.js");
+  const app = require("../index");
   
   module.exports = createAzureFunction(app, { probot: createProbot() });
